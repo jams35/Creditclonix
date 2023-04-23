@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-image: url("../img/bg-cidade.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo-header{
+    color: #fff;
+    background: linear-gradient(100deg, #000, transparent);
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #e2ba05;
+}
+
+.cartao{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 600px;
+    height: 350px;
+    background: linear-gradient(100deg, #000, transparent);
+    backdrop-filter: blur(70px);
+    border-radius: 20px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    text-shadow: 0 0 20px #000;
+    padding: 1.5rem 2rem;
+    box-shadow: 0px 20px 50px -10px #000;
+    font-weight: 600;
+}
+
+.rodape-cartao, .titulo-cartao{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo-cartao svg{
+    transform: rotate(90deg);
+    width: 40px;
+    height: 40px;
+}
+
+.titulo-cartao{
+    font-size: 1.8rem;
+    z-index: 1;
+}
+
+.rodape-cartao-esquerda{
+    gap: 0.7rem;
+}
+
+.rodape-cartao-direita, .rodape-cartao-esquerda{
+    display: flex;
+    flex-direction: column;
+}
+
+.numero-cartao{
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+
+.chip img{
+    width: 100px;
+    padding-left: 2rem;
+}
+
+.rodape-cartao-direita img{
+    width: 100px;
+}
+
+.rodape-cartao-direita span{
+    text-align: center;
+}
